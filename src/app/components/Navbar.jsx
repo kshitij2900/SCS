@@ -26,7 +26,7 @@ export function Nav() {
         <Navbar.Link href="#" className="text-black text-base font-semibold">About</Navbar.Link>
         <Navbar.Link href="#" className=" text-black text-base font-semibold">Services</Navbar.Link>
         <Navbar.Link href="#" className=" text-black text-base font-semibold">Pricing</Navbar.Link>
-        <Navbar.Link href="#" className=" text-black text-base font-semibold">Contact</Navbar.Link>
+        <Navbar.Link href="/pages/contact" className=" text-black text-base font-semibold">Contact</Navbar.Link>
        
       </Navbar.Collapse>
     </Navbar>
