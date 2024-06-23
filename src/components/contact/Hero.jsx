@@ -66,7 +66,7 @@ const Hero = () => {
                                             key={i}
                                             href={item.href}
                                             target='_blank'
-                                            className="rounded-full bg-blue-900 p-3 shadow-lg hover:bg-blue-600"
+                                            className="rounded-full bg-[#19456B] p-3 shadow-lg hover:bg-blue-800"
                                         >
                                             <span className="sr-only">{item.title}</span>
                                             {item.svg}

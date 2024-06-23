@@ -6,13 +6,13 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 
 export function Foot() {
   return (
-    <Footer container className="bg-black text-white" >
+    <Footer container className="bg-[#19456B] text-white" >
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div >
             <Footer.Brand
               href="/"
-              src=""
+              src="/assets/s.png"
               alt="Syntalix Logo"
              
               className="text-white"

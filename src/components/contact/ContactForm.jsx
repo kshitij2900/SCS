@@ -201,7 +201,7 @@ const ContactForm = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="mt-4 bg-indigo-800 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-full"
+                  className="mt-4 bg-[#16C79A] hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
                 >
                   Submit
                 </button>
