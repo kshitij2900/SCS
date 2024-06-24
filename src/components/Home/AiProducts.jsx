@@ -13,7 +13,9 @@ const AiProducts = () => {
           Explore AI-Powered products Uniquely Designed to Meet Your Business Needs and Drive Innovation.
         </p>
       </div>
+      <div>
       <CardLayout/>
+      </div>
     </div>
   );
 };

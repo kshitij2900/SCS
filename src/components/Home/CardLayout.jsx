@@ -5,7 +5,7 @@ import cardImage from '/assets/Experience/cardImage.png'; // Replace with your i
 
 const Card = ({ title, subtitle, description }) => {
   return (
-    <div className="w-full md:w-[350px] h-auto md:h-[420px] bg-[#19456B] shadow-lg rounded-xl p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <div className="w-full md:w-[350px] h-auto md:h-[420px] bg-[#16C79A] shadow-lg rounded-xl p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
       <Image 
         src={cardImage} 
@@ -16,7 +16,7 @@ const Card = ({ title, subtitle, description }) => {
       />
       <h4 className="text-lg font-semibold mb-1 text-white">{subtitle}</h4>
       <p className="text-white text-center">{description}</p>
-      <button className="bg-[#16C79A] rounded-2xl mt-2 py-2 px-4 text-white">Action</button>
+      <button className="bg-[#19456B] rounded-2xl mt-2 py-2 px-4 text-white">Action</button>
     </div>
   );
 };
