@@ -7,12 +7,14 @@ import Counter from "@/components/Home/Counter";
 import Gigs from "@/components/Home/Gigs";
 import Testimonials from "@/components/Home/Testimonials";
 import Banner from "@/components/Home/Banner";
+import PopupForm from "@/components/Home/PopUpForm";
 
 
 
 export default function Home() {
   return (
     <div className=" bg-white">
+      <PopupForm/>
       <Hero/>
     <Client/>
     <Whyus/>

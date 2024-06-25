@@ -37,13 +37,14 @@ const Hero = () => {
         <section className="relative isolate bg-white py-8 lg:py-16 ">
             <div className="mx-auto max-w-full px-4 md:max-w-[90%] lg:px-8 ">
                 <div className="mx-auto max-w-full">
-                    <p className="text-base font-semibold leading-7 uppercase bg-black rounded-xl w-fit mx-auto md:mx-0 px-4 py-1 text-primary-1">
+                    <p className="text-base font-semibold leading-7 uppercase bg-custom-gradient text-white rounded-xl w-fit mx-auto md:mx-0 px-4 py-1">
                         Get in Touch
                     </p>
                     <div className="flex flex-col mt-2 items-center justify-between gap-y-5 py-4 text-center md:gap-x-10 lg:flex-row lg:text-left">
                         <div className='flex flex-col gap-8'>
                             <h2 className="text-4xl text-gray-800 md:text-6xl font-semibold font-cabm">
-                                Contact us
+                                Contact <span className=''> Us</span>
+                               
                             </h2>
                             <p className="my-auto max-w-xl text- text-gray-700 text-lg">
                                 Ready to explore transformative IT solutions with Syntalix Consultancy Services? Contact us today for seamless collaboration and dedicated support on your journey toward innovative technology solutions. Let&apos;s connect and grow together.
@@ -51,7 +52,7 @@ const Hero = () => {
                         </div>
                         <div className='md:mr-16 flex flex-col md:items-end'>
                             <Link href="#contact-form">
-                                <button className=' bg-gray-900  flex gap-2 items-center md:mx-0 mx-auto text-white text-lg rounded-full px-8 py-2'>
+                                <button className=' bg-btn  flex gap-2 items-center md:mx-0 mx-auto text-white text-lg rounded-full px-8 py-2'>
                                     Book your free call
                                     <TiArrowDown className='w-5 h-5' />
                                 </button>
@@ -66,7 +67,7 @@ const Hero = () => {
                                             key={i}
                                             href={item.href}
                                             target='_blank'
-                                            className="rounded-full bg-[#19456B] p-3 shadow-lg hover:bg-blue-800"
+                                            className="rounded-full bg-black text-white p-3 shadow-lg "
                                         >
                                             <span className="sr-only">{item.title}</span>
                                             {item.svg}
