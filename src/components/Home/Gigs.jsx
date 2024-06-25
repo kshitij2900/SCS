@@ -3,11 +3,11 @@ import Card from './GigsCard'
 import img from '/assets/Gigs/gigs.png'
 const Gigs = () => {
   return (
-    <div>
-        <div className="flex flex-col md:flex-row items-center lg:w-full lg:h-[186px] lg:ml-[94px]">
+    <div >
+        <div className="flex flex-col md:flex-row  items-center lg:w-full lg:h-[186px] px-4 md:px-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#0b1b29] font-semibold text-wrap md:w-3/5 lg:w-[625px] md:mr-4">
           Explore Our{' '}
-          <span className="text-[#16C79A]">GIGS</span>
+          <span className="text-[#4812E4]">GIGS</span>
         </h1>
         </div>
         <div className="container mx-auto p-4">

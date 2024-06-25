@@ -59,11 +59,11 @@ const Whyus = () => {
         <section className="relative isolate bg-white py-16 sm:py-20">
             <div className="mx-auto max-w-full px-4 md:max-w-[90%] lg:px-8">
                 <div className="flex items-center justify-center flex-col gap-6">
-                    <p className="text-center font-semibold leading-7 uppercase bg-[#19456B] rounded-xl w-fit px-3 py-0 text-white lg:text-left text-xs">
+                    <p className="text-center font-semibold leading-7 uppercase bg-custom-gradient rounded-xl w-fit px-3 py-0 text-white lg:text-left text-xs">
                         Our Values
                     </p>
-                    <h2 className='text-4xl font-cabm text-[#19456B] md:text-6xl max-w-lg text-center font-semibold'>
-                        Why <span className='text-[#16C79A]'> Choose Us</span>.
+                    <h2 className='text-4xl font-cabm text-black md:text-6xl max-w-lg text-center font-semibold'>
+                        Why <span className='text-[#4812E4]'> Choose Us</span>.
                     </h2>
                     <p className="my-auto max-w-2xl text-base text-gray-700 text-center md:text-lg">
                     Discover Us: Why We are Your Best Choice

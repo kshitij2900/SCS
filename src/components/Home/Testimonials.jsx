@@ -62,7 +62,7 @@ const Card = [
 
 const TestimonialCard = ({ name, position, image, review }) => (
   <div className=" relative rounded-md flex flex-col  max-h-[350px] w-full flex-shrink-0 grow-0 ">
-    <div className="flex flex-row justify-between bg-green-100 shadow-lg ring-1 ring-zinc-50 hover:shadow-xl hover:ring-zinc-100 ">
+    <div className="flex flex-row justify-between bg-[#EDE7FF] shadow-lg ring-1 ring-zinc-50 hover:shadow-xl hover:ring-zinc-100 ">
       <Image
         src={Quote}
         alt="Google"
@@ -222,7 +222,7 @@ export default function Testimonials() {
           Testimonials
         </p>
         <h2 className="text-5xl font-cabm text-black md:text-6xl max-w-lg text-center font-semibold">
-          Why Customer&apos;s <span className="text-[#16C79A]">Love Us</span>
+          Why Customer&apos;s <span className="text-[#4812E4]">Love Us</span>
         </h2>
       </div>
       <Swiper
