@@ -61,13 +61,13 @@ const PopupForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+            className="w-full rounded-3xl bg-indigo-600 text-white py-2 px-4  hover:bg-indigo-700"
           >
             Get in Touch With Us
           </button>
         </form>
         <button
-          className="absolute top-2 right-2 font-bold text-4xl text-white hover:text-gray-700"
+          className="absolute top-2 right-2 font-bold text-4xl text-white "
           onClick={() => setIsVisible(false)}
         >
           ✕

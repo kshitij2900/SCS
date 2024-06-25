@@ -23,10 +23,10 @@ export function Nav() {
       </div>
       <Navbar.Collapse>
         
-        <Navbar.Link href="/about" className="text-gray-900 text-base font-normal hover:text-gray-900 hover:font-semibold">About</Navbar.Link>
-        <Navbar.Link href="/services" className="text-gray-900  text-base font-normal hover:font-semibold">Services</Navbar.Link>
-        <Navbar.Link href="#" className=" text-gray-900 text-base font-normal hover:font-semibold">Pricing</Navbar.Link>
-        <Navbar.Link href="/contact" className=" text-gray-900 text-base font-normal hover:font-semibold">Contact</Navbar.Link>
+        <Navbar.Link href="/about" className="text-gray-900 text-base font-normal hover:text-purple-500 lg:hover:text-purple-500  hover:underline">About</Navbar.Link>
+        <Navbar.Link href="/services" className="text-gray-900  text-base font-normal hover:text-purple-500 lg:hover:text-purple-500  hover:underline">Services</Navbar.Link>
+        <Navbar.Link href="#" className=" text-gray-900 text-base font-normal hover:text-purple-500 lg:hover:text-purple-500  hover:underline">Pricing</Navbar.Link>
+        <Navbar.Link href="/contact" className=" text-gray-900 text-base font-normal hover:text-purple-500 lg:hover:text-purple-500  hover:underline">Contact</Navbar.Link>
        
       </Navbar.Collapse>
     </Navbar>
