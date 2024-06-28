@@ -5,18 +5,45 @@ import cardImage from '/assets/Experience/cardImage.png'; // Replace with your i
 
 const Card = ({ title, subtitle, description }) => {
   return (
-    <div className="w-full md:w-[350px] h-auto md:h-[420px] bg-gray-200 shadow-lg rounded-xl p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <h3 className="text-xl font-bold mb-2 text-black">{title}</h3>
-      <Image 
-        src={cardImage} 
-        alt="Card Image" 
-        width={450} 
-        height={400} 
-        className="mb-2 rounded-xl h-auto md:h-[300px] lg:h-[350px]" 
-      />
-      <h4 className="text-lg font-semibold mb-1 text-black">{subtitle}</h4>
-      <p className="text-gray-700 text-center">{description}</p>
-      <button className="bg-[#19456B] rounded-2xl mt-2 py-2 px-4 text-white">Action</button>
+    <div className="flex flex-col pb-1.5 rounded-2xl border border-solid shadow-2xl border-zinc-600 max-w-[350px] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div className="flex gap-0 justify-center py-0.5 pr-1.5 pl-5 text-base font-bold leading-6 text-zinc-800">
+        <div className="flex-1 my-auto">{title}</div>
+        <img
+          loading="lazy"
+          
+          className="shrink-0 w-11 aspect-square"
+        />
+      </div>
+      <div className="flex flex-col px-5 w-full rounded-xl">
+        <Image
+          loading="lazy"
+          src={cardImage}
+          className="w-full h-auto w-auto border border-solid aspect-[1.15] border-zinc-600"
+        />
+        <div className="flex gap-0 justify-center text-gray-500 rounded-3xl">
+          <div className="flex-1 my-auto text-sm font-semibold leading-5">
+          {subtitle}
+          </div>
+          <div className="justify-center px-3.5 py-4 text-base font-bold leading-4 text-center whitespace-nowrap">
+            trees
+          </div>
+        </div>
+        <div className="text-sm leading-5 text-zinc-800">
+        {description}
+        </div>
+        <div className="flex gap-5 justify-between text-center leading-[155%]">
+          <div className="my-auto text-xs italic text-gray-400">
+            Quote, caption
+          </div>
+          <div className="justify-center px-4 py-3 text-base whitespace-nowrap rounded-xl border border-solid bg-neutral-700 border-zinc-600 text-neutral-300">
+            Action
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-0 justify-center px-5 py-4 text-xs leading-3 text-zinc-800">
+        <div className="flex-1">Card footer 1</div>
+        <div className="flex-1 text-right">Card footer 2</div>
+      </div>
     </div>
   );
 };
@@ -40,6 +67,7 @@ const CardLayout = () => {
         description="This is a description for card 3."
       />
     </div>
+    
   );
 };
 
