@@ -63,7 +63,7 @@ const Whyus = () => {
                         Our Values
                     </p>
                     <h2 className='text-4xl font-cabm text-black md:text-6xl max-w-lg text-center font-semibold'>
-                        Why <span className='text-[#4812E4]'> Choose Us</span>.
+                        Why <span className='bg-gradient-to-r from-purple-600 via-purple-500 to-purple-300 text-transparent bg-clip-text'> Choose Us</span>.
                     </h2>
                     <p className="my-auto max-w-2xl text-base text-gray-700 text-center md:text-lg">
                     Discover Us: Why We are Your Best Choice

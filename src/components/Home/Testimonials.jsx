@@ -222,7 +222,7 @@ export default function Testimonials() {
           Testimonials
         </p>
         <h2 className="text-5xl font-cabm text-black md:text-6xl max-w-lg text-center font-semibold">
-          Why Customer&apos;s <span className="text-[#4812E4]">Love Us</span>
+          Why Customer&apos;s <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-300 text-transparent bg-clip-text">Love Us</span>
         </h2>
       </div>
       <Swiper
