@@ -1,16 +1,26 @@
-import React from "react";
-import Image from "next/image";
+'use client';
+
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import cardImage from '/assets/Experience/cardImage.png'; // Replace with your image path
 
-
 const Card = ({ title, subtitle, description }) => {
+  const cardRef = useRef(null);
+  const isInView = useInView(cardRef, { once: true });
+
   return (
-    <div className="flex flex-col pb-1.5 rounded-2xl border border-solid shadow-2xl border-zinc-600 max-w-[350px] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <motion.div
+      ref={cardRef}
+      initial={{ opacity: 0, y: 20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8 }}
+      className="flex flex-col pb-1.5 rounded-2xl border border-solid shadow-2xl border-zinc-600 max-w-[350px] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+    >
       <div className="flex gap-0 justify-center py-0.5 pr-1.5 pl-5 text-base font-bold leading-6 text-zinc-800">
         <div className="flex-1 my-auto">{title}</div>
         <img
           loading="lazy"
-          
           className="shrink-0 w-11 aspect-square"
         />
       </div>
@@ -22,14 +32,14 @@ const Card = ({ title, subtitle, description }) => {
         />
         <div className="flex gap-0 justify-center text-gray-500 rounded-3xl">
           <div className="flex-1 my-auto text-sm font-semibold leading-5">
-          {subtitle}
+            {subtitle}
           </div>
           <div className="justify-center px-3.5 py-4 text-base font-bold leading-4 text-center whitespace-nowrap">
             trees
           </div>
         </div>
         <div className="text-sm leading-5 text-zinc-800">
-        {description}
+          {description}
         </div>
         <div className="flex gap-5 justify-between text-center leading-[155%]">
           <div className="my-auto text-xs italic text-gray-400">
@@ -44,7 +54,7 @@ const Card = ({ title, subtitle, description }) => {
         <div className="flex-1">Card footer 1</div>
         <div className="flex-1 text-right">Card footer 2</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -67,7 +77,6 @@ const CardLayout = () => {
         description="This is a description for card 3."
       />
     </div>
-    
   );
 };
 
