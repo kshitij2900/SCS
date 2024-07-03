@@ -1,13 +1,13 @@
 'use client'
 import { useState, useEffect } from 'react';
-
+import { ImCross } from "react-icons/im";
 const PopupForm = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 4000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,9 +16,9 @@ const PopupForm = () => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold mb-4">Get in Touch With Us</h2>
-        <form>
+      <div className="bg-white p-10 w-[90%] rounded-2xl md:w-[400px] shadow-lg">
+        <h2 className="text-xl font-bold mb-4 text-center">Get in Touch With Us</h2>
+        <form className='relative w-full md:max-w-[500px] bg-slate-50 shadiw-lg rounded-2xl'>
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium  text-gray-700">
               Name
@@ -70,7 +70,7 @@ const PopupForm = () => {
           className="absolute top-2 right-2 font-bold text-4xl text-white "
           onClick={() => setIsVisible(false)}
         >
-          ✕
+         <ImCross />
         </button>
       </div>
     </div>
