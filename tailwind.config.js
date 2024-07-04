@@ -26,6 +26,9 @@ module.exports = {
         'txt-bg': 'linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(270deg, rgba(182, 53, 227, 0.4) 0.5%, #4812E4 100%)'
 
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
