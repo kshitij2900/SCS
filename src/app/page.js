@@ -9,7 +9,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import Banner from "@/components/Home/Banner";
 import PopupForm from "@/components/Home/PopUpForm";
 import Whatsapp from "@/components/Whatsapp";
-
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -25,6 +25,7 @@ export default function Home() {
     <Testimonials/>
     <Banner/>
     <Whatsapp/>
+    <Chatbot/>
     </div>
   );
 }
