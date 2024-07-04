@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "../components/Navbar";
 import { Foot } from "../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nav/>
+        <Nav />
         {children}
-       <Foot/>
-        </body>
+        <Foot />
+      </body>
     </html>
   );
 }

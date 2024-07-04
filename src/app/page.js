@@ -14,17 +14,17 @@ import Whatsapp from "@/components/Whatsapp";
 export default function Home() {
   return (
     <div className=" bg-white">
-      <PopupForm/>
-      <Hero/>
-    <Client/>
-    <Whyus/>
-    <Counter/>
-    <Experience/>
-    <AiProducts/>
-    <Gigs/>
-    <Testimonials/>
-    <Banner/>
-    <Whatsapp/>
+      <PopupForm />
+      <Hero />
+      <Client />
+      <Whyus />
+      <Counter />
+      <Experience />
+      <AiProducts />
+      <Gigs />
+      <Testimonials />
+      <Banner />
+      <Whatsapp />
     </div>
   );
 }

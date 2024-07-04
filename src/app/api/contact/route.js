@@ -1,12 +1,12 @@
-import { NextResponse,NextRequest } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(NextRequest, res) {
   const reqBody = await NextRequest.json();
-  const {name ,email, message} = reqBody;
-  console.log(name,email)
+  const { name, email, message } = reqBody;
+  console.log(name, email)
   const transporter = nodemailer.createTransport({
-    service:'gmail',
+    service: 'gmail',
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
     auth: {
@@ -26,14 +26,14 @@ export async function POST(NextRequest, res) {
       replyTo: email, // This ensures replies go to the customer
     });
     return NextResponse.json({
-            message:"email sent",
-            success: true
-        })
+      message: "email sent",
+      success: true
+    })
   } catch (error) {
     console.error(error);
-    return NextResponse.json({error: error.message},{
+    return NextResponse.json({ error: error.message }, {
       status: 500
-  })
+    })
   }
 }
 
