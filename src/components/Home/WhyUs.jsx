@@ -67,7 +67,7 @@ const Whyus = () => {
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="text-center font-semibold leading-7 uppercase bg-custom-gradient rounded-xl w-fit px-3 py-0 text-white lg:text-left text-xs"
           >
             Our Values
@@ -75,7 +75,7 @@ const Whyus = () => {
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="text-4xl font-cabm text-black md:text-6xl max-w-lg text-center font-semibold"
           >
             Why <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-300 text-transparent bg-clip-text">Choose Us</span>.
@@ -83,7 +83,7 @@ const Whyus = () => {
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             className="my-auto max-w-2xl text-base text-gray-700 text-center md:text-lg"
           >
             Discover Us: Why We are Your Best Choice
@@ -95,7 +95,7 @@ const Whyus = () => {
             <motion.dl
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               className="flex flex-col w-full gap-10 lg:gap-16 mt-3"
             >
               {features.slice(0, 3).map((feature, i) => (
@@ -103,7 +103,7 @@ const Whyus = () => {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.8, delay: 0.8 + i * 0.2 }}
+                  transition={{ duration: 0.4, delay: 0.4 + i * 0.2 }}
                   className={`flex md:flex-row-reverse items-center gap-4 ${feature.class}`}
                 >
                   <dt className="h-auto">
@@ -125,7 +125,7 @@ const Whyus = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.8, delay: 1.2 }}
+              transition={{ duration: 0.4, delay:0.8 }}
               className="flex items-center justify-center"
             >
               <Image
@@ -137,7 +137,7 @@ const Whyus = () => {
             <motion.dl
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.8, delay: 1.6 }}
+              transition={{ duration: 0.5, delay: 1 }}
               className="flex flex-col w-full gap-10 md:gap-12 mt-3"
             >
               {features.slice(3).map((feature, i) => (
@@ -145,7 +145,7 @@ const Whyus = () => {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.8, delay: 1.8 + i * 0.2 }}
+                  transition={{ duration: 0.5, delay: 1.4 + i * 0.2 }}
                   className={`flex flex-row items-center md:py-0.5 gap-4 ${feature.class}`}
                 >
                   <dt className="h-auto">

@@ -14,8 +14,8 @@ const Card = ({ title, subtitle, description }) => {
       ref={cardRef}
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8 }}
-      className="flex flex-col pb-1.5 rounded-2xl border border-solid shadow-2xl border-zinc-600 max-w-[350px] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+      transition={{ duration: 0.5 }}
+      className="flex flex-col pb-1.5 rounded-2xl border border-solid  border-zinc-600 max-w-[350px] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
     >
       <div className="flex gap-0 justify-center py-0.5 pr-1.5 pl-5 text-base font-bold leading-6 text-zinc-800">
         <div className="flex-1 my-auto">{title}</div>
@@ -28,7 +28,7 @@ const Card = ({ title, subtitle, description }) => {
         <Image
           loading="lazy"
           src={cardImage}
-          className="w-full h-auto w-auto border border-solid aspect-[1.15] border-zinc-600"
+          className="w-full h-auto border border-solid aspect-[1.15] border-zinc-600"
         />
         <div className="flex gap-0 justify-center text-gray-500 rounded-3xl">
           <div className="flex-1 my-auto text-sm font-semibold leading-5">

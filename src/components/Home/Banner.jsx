@@ -17,7 +17,7 @@ const Reach = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.4}}
         className="relative isolate overflow-hidden rounded-2xl bg-custom-gradient shadow-xl shadow-gray-400"
       >
         <Image src={L1} alt="bg" className="absolute top-0" />
@@ -26,7 +26,7 @@ const Reach = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-center text-base font-semibold leading-7 uppercase bg-white rounded-xl w-fit px-4 py-1 text-black lg:text-left"
           >
             Get in touch
@@ -34,7 +34,7 @@ const Reach = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl mt-3 font-cabr text-white md:text-6xl max-w-md font-semibold"
           >
             How Can You <span className="text-primary-2"> Reach Us</span>?
@@ -42,7 +42,7 @@ const Reach = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="my-auto mt-3 max-w-2xl text-base text-gray-300 md:text-lg"
           >
             If you need to get in touch, there are several ways to contact us.
@@ -51,7 +51,7 @@ const Reach = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col md:flex-row w-full gap-y-4 justify-between mt-8 text-lg"
           >
             <Link href="mailto:info@achintyasolutions.com" className="text-white flex gap-2 items-center">
@@ -78,7 +78,7 @@ const Reach = () => {
           <motion.ul
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
             className="mt-8 text-gray-300 list-disc ml-4 text-sm md:text-base"
           >
             <li>Submit your query and state your requirements.</li>
