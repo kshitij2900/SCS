@@ -6,7 +6,7 @@ import Image from "next/image";
 import scs from "../../assets/syntalix.png";
 export function Nav() {
   return (
-    <Navbar className="p-7">
+    <Navbar className="p-5 bg-white/40 backdrop-blur-md border-b sticky top-0 z-[100]">
       <Navbar.Brand href="/">
         <Image
           className="mr-3 h-6 sm:h-9"
@@ -19,6 +19,7 @@ export function Nav() {
           SCS
         </span>
       </Navbar.Brand>
+
       <div className="flex md:order-2 gap-2">
         <a href="tel:+1234567890">
           <Button className="bg-transparent rounded-3xl border-gray-800 text-gray-800 font-bold">

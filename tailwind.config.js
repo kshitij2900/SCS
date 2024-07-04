@@ -1,5 +1,5 @@
 import flowbite from "flowbite-react/tailwind";
-const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -67,6 +67,15 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 4rem))' },
+        },
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -78,14 +87,11 @@ module.exports = {
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
+        gradient: "gradient 8s linear infinite",
+        'logo-cloud': 'logo-cloud 30s linear infinite',
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins:[
-    // ...
-    flowbite.plugin(),
-  ],
-  
-          
+  plugins: [require("tailwindcss-animate"), flowbite.plugin()],
 }
