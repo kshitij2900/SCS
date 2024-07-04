@@ -2,7 +2,7 @@ import Whyus from "@/components/Home/WhyUs";
 // import Client from "@/components/Home/client";
 import Hero from "@/components/Home/Hero";
 import Experience from "@/components/Home/Experience";
-import AiProducts from "@/components/Home/AiProducts";
+// import AiProducts from "@/components/Home/AiProducts";
 import Counter from "@/components/Home/Counter";
 import Gigs from "@/components/Home/Gigs";
 import Testimonials from "@/components/Home/Testimonials";
@@ -21,7 +21,7 @@ export default function Home() {
       <Whyus />
       <Counter />
       <Experience />
-      <AiProducts />
+      {/* <AiProducts /> */}
       <Gigs />
       <Testimonials />
       <Banner />
