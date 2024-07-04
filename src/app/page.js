@@ -9,12 +9,17 @@ import Testimonials from "@/components/Home/Testimonials";
 import Banner from "@/components/Home/Banner";
 import PopupForm from "@/components/Home/PopUpForm";
 import Whatsapp from "@/components/Whatsapp";
+
+import Chatbot from "@/components/Chatbot";
+
 import AnimatedLogoCloud from "@/components/Home/logocloud";
 
 
 export default function Home() {
   return (
     <div className=" bg-white">
+    
+
       <PopupForm />
       <Hero />
       <AnimatedLogoCloud />
@@ -26,6 +31,7 @@ export default function Home() {
       <Testimonials />
       <Banner />
       <Whatsapp />
+      <Chatbot/>
     </div>
   );
 }
