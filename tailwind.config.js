@@ -1,4 +1,5 @@
 import flowbite from "flowbite-react/tailwind";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -24,9 +25,6 @@ module.exports = {
         'btn': 'linear-gradient(100.09deg, #000000 20.61%, #3C3A41 52.31%)',
         'txt-bg': 'linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(270deg, rgba(182, 53, 227, 0.4) 0.5%, #4812E4 100%)'
 
-      },
-      fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -73,6 +71,11 @@ module.exports = {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(calc(-100% - 4rem))' },
         },
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -84,15 +87,11 @@ module.exports = {
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
+        gradient: "gradient 8s linear infinite",
         'logo-cloud': 'logo-cloud 30s linear infinite',
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [
-    // ...
-    flowbite.plugin(),
-  ],
-
-
+  plugins: [require("tailwindcss-animate"), flowbite.plugin()],
 }
