@@ -8,7 +8,7 @@ import Gigs from "@/components/Home/Gigs";
 import Testimonials from "@/components/Home/Testimonials";
 import Banner from "@/components/Home/Banner";
 import PopupForm from "@/components/Home/PopUpForm";
-
+import Whatsapp from "@/components/Whatsapp";
 
 
 export default function Home() {
@@ -24,6 +24,7 @@ export default function Home() {
     <Gigs/>
     <Testimonials/>
     <Banner/>
+    <Whatsapp/>
     </div>
   );
 }
