@@ -34,7 +34,7 @@ const ContactForm = () => {
       });
       if (response.ok) {
         alert("Message sent successfully");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "", budget:"" });
       } else {
         alert("Failed to send message");
       }
@@ -203,7 +203,7 @@ const ContactForm = () => {
                   type="submit"
                   className="mt-4 bg-custom-gradient hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-full"
                 >
-                  Submit
+                  Get in Touch With Us
                 </button>
               </div>
             </form>

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 const Card = ({ imageSrc, title, description, buttonText }) => (
-  <div className="bg-white rounded-xl shadow-lg overflow-hidden w-[90%] lg:w-[332px] h-auto lg:h-[372px] mx-auto border border-purple-800 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+  <div className="bg-white rounded-xl overflow-hidden w-[90%] lg:w-[332px] h-auto lg:h-[372px] mx-auto border border-purple-800 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
     <div className="relative w-full h-48 lg:h-[168px]">
       <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" />
     </div>
