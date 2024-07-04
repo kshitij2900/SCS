@@ -12,7 +12,7 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className='flex justify-center items-center pt-20 lg:pt-40 md:pt-30 mx-auto w-[60%] flex-col'
       >
-        <h1 className='text-center text-5xl lg:text-7xl md:text-6xl font-semibold text-wrap'>
+        <h1 className='text-center tracking-tighter text-5xl lg:text-7xl md:text-6xl font-semibold text-wrap'>
           Explore Innovation with Expert 
           <span className='bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-transparent bg-clip-text'> AI Consulting</span>
         </h1>

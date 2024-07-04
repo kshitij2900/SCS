@@ -1,5 +1,5 @@
 import Whyus from "@/components/Home/WhyUs";
-import Client from "@/components/Home/client";
+// import Client from "@/components/Home/client";
 import Hero from "@/components/Home/Hero";
 import Experience from "@/components/Home/Experience";
 import AiProducts from "@/components/Home/AiProducts";
@@ -9,6 +9,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import Banner from "@/components/Home/Banner";
 import PopupForm from "@/components/Home/PopUpForm";
 import Whatsapp from "@/components/Whatsapp";
+import AnimatedLogoCloud from "@/components/Home/logocloud";
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
     <div className=" bg-white">
       <PopupForm />
       <Hero />
-      <Client />
+      <AnimatedLogoCloud />
       <Whyus />
       <Counter />
       <Experience />
