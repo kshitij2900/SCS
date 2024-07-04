@@ -25,18 +25,7 @@ const cardData = [
     title: "Development Services",
     description: "This is a short description for card 4."
   },
-  {
-    id: 5,
-    image: 'services/strategy.png',
-    title: "Card Title 5",
-    description: "This is a short description for card 5."
-  },
-  {
-    id: 6,
-    image: 'services/strategy.png',
-    title: "Card Title 6",
-    description: "This is a short description for card 6."
-  }
+  
 ];
 
 const Card = ({ image, title, description }) => (
@@ -49,7 +38,7 @@ const Card = ({ image, title, description }) => (
 );
 
 const CardGrid = () => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-6">
     {cardData.map(card => (
       <Card key={card.id} image={card.image} title={card.title} description={card.description} />
     ))}

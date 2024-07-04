@@ -13,7 +13,7 @@ const Hero = () => {
             <h2 className='text-black text-semibold text-4xl mt-4 mx-auto md:mx-0 px-4 md:px-4 md:max-w-[50%]'>Our agency experts will provide you with a full stack of services</h2>
 
             </div>
-            <div className="min-h-screen flex items-center justify-center">
+            <div className=" flex items-center justify-center">
     <CardGrid />
   </div>
             {/* <div className="flex flex-col p-9 space-y-14 mx-auto">
