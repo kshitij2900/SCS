@@ -2,8 +2,6 @@
 import React from "react";
 import Hero from '@/components/contact/Hero';
 import Form from '@/components/contact/ContactForm';
-import Footer from "@/Components/Footer";
-
 export const metadata = {
     title: "Contact Us",
     description:
