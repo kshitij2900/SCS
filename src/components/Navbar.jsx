@@ -47,12 +47,7 @@ export function Nav() {
         >
           Pricing
         </Navbar.Link>
-        <Navbar.Link
-          href="/contact"
-          className="text-gray-900 text-base font-normal hover:font-bold hover:text-gray-900 lg:hover:text-gray-900 transform hover:scale-105 transition duration-500"
-        >
-          Contact
-        </Navbar.Link>
+        
       </Navbar.Collapse>
     </Navbar>
   );
